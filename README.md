@@ -1,24 +1,23 @@
-# Orbit by Team Banana404
+# Orbit by Banana404
 
-**Team:** Victoria Kew Kim Tian, Yow Jia Yen, Yong Zi Yan, Goh Ching Yee  
-**Problem Statement:** Stress & Workload Manager  
-**Video Presentation:** [Unlisted Youtube Link]  
-**Presentation Slides:** [Public Link]  
+**Team:** Yow Jia Yen, Goh Ching Yee, Victoria Kew Kim Tian, Yong Zi Yan
+**Problem Statement:** Lifestyle Track: Beating the Burnout - Stress & Workload Manager
+
+**Video Presentation:** [YouTube Link](#) 
+*Brief Explanation:* A video presentation demonstrating the core cosmic task environment, voice input interaction, and the fluid task gestures (Done, Freeze, Chunk, Delete).
+
+**Presentation Slides:** [Canva Link](#)
+*Brief Explanation:* Our pitch deck outlining the problem of productivity burnout, introducing our philosophy "When you have less capacity, we ask less of you," and visualizing the adaptive UI.
 
 ---
 
 ## 1. Project Overview
 
-**The Problem.** University students juggle immense cumulative loads across their academic and personal schedules without knowing they are heading toward a crash. Traditional time-management and checklist tools merely track time, treating all tasks equally and waiting until the student crashes to reflect the overload. Existing apps fall short because they add cognitive and administrative friction, such as rigid planners, complex dashboards, or punitive streak counters, that actually increase a student's mental load.
+**The Problem**
+Traditional productivity apps attempt to maximize output, which frequently leads to burnout and anxiety for stakeholders like students and professionals. Similar apps in the market (e.g., Todoist, Notion, or standard calendar apps) fall short because they rely on conventional dashboards, infinite scrolling lists, and guilt-driven mechanics like red overdue text and streaks. They do not account for a user's fluctuating daily mental capacity.
 
-**Our Solution.** Orbit is an adaptive workload manager that protects the user's mental bandwidth[cite: 2]. Built on the core philosophy that "When you have less capacity, we ask less of you," Orbit shifts from traditional rigid tracking to dynamic capacity management[cite: 2]. Utilizing a minimalist, calm visual hierarchy featuring a dark cosmic background and hand-drawn paper task cards, Orbit allows users to report their daily capacity via a horizontal slider[cite: 2]. The system automatically adapts task presentation so the user is never confronted with their entire workload at once[cite: 2].
-
-*   **Daily Capacity Check-in:** A horizontal slider on Screen 1 used exclusively for self-reported daily capacity, scaling animation speed, background brightness, and task difficulty[cite: 2].
-*   **Single-Card Task Deck (Screen 2):** Displays only ONE task card at a time to prevent cognitive overload[cite: 2].
-*   **Four Core Gesture Mechanics:** Intuitive swipe controls on the card: Right for Done (meteor animation), Left for Freeze (safe storage), Up for Chunk (simplifying large tasks), and Down for Delete (cosmic void)[cite: 2].
-*   **Physical Undo System:** Opposite-direction drag to easily pull a card back into orbit[cite: 2].
-*   **Voice Task Creation:** Long-press anywhere on the task deck to activate a clean listening and AI processing state without a microphone button[cite: 2].
-*   **Gentle Mode & Quiet Protection:** Automatic scaling when capacity is extremely low, paired with anti-spam notification protection that never punishes the user for being away[cite: 2].
+**Our Solution**
+Orbit is a stress-aware task management experience designed around a quiet, cosmic notebook interface. It explicitly adapts the volume and difficulty of tasks presented to the user based on a daily capacity check. Core features include a gesture-based task card system (Right: Done, Left: Freeze, Up: Chunk, Down: Delete), a voice-to-task AI interpreter that breaks down brain-dumps into single tasks, and a dynamic visual environment where elements like the "energy ripple" and star brightness shift with your daily load.
 
 ---
 
@@ -28,53 +27,57 @@
 
 | Idea | Why it was dropped / kept |
 | :--- | :--- |
-| **A. Adaptive Single-Card Workload Manager ("Orbit")** | **Kept:** Solves burnout by replacing intimidating dashboards with a single-card deck and gesture-based interactions that automatically scale down when user capacity drops[cite: 2]. |
-| **B. Hand-Drawn Cosmic & Sketch Aesthetic** | **Kept:** Replaces high-stress corporate productivity apps with a calming interface (dark cosmic background, hand-drawn lines, paper-like cards) that feels like a quiet notebook[cite: 2]. |
-| **C. Traditional Dashboard Checklists & Streaks** | **Dropped:** Adds pressure and guilt via red badges, streaks, and score tracking, which our research showed accelerates student burnout[cite: 2]. |
+| **A (Chosen): Adaptive Load Manager with Cosmic UI** | Kept because it inherently solves the pressure of traditional task lists by matching UI elements (stars, ripples) to user capacity, communicating a forgiving environment. |
+| **B (Chosen): Voice-based multi-task input** | Kept because it significantly lowers task-entry friction. Users can brain-dump tasks while the AI automatically parses them into manageable cards. |
+| **C: Gamified Productivity Tracker with Streaks** | Dropped because it introduces guilt mechanics and pressure to maintain streaks, which completely contradicts our core "no guilt" philosophy. |
 
 ### 2.2 Ideation Boards
-*   **Central Workspace & Documentation:** CodeNection 2026_Banana 404 | Project Buffer Space (including Confluence pages for *5.9.2026 1st meeting*, *10.9.2026 Mentor Consultation*, *Project Overview & Impact*, *Technical Architecture & API Strategy*, *Accessibility & UX Guidelines*, and *Ideation & Pivot Log*)[cite: 3].
-*   **Multilayered Problem Tree & Planning:** [Insert FigJam Link] - Problem mapping and interaction workflows.
-*   **Database Schema Mapping:** [Insert dbdiagram.io Link] - Visualizing Firebase Firestore NoSQL schema structures, capacity logs, and triage events[cite: 3].
 
-> *Fig. 1: Multilayered problem tree mapping out student cognitive overload triggers and the design rules for zero-punishment task management.*
+* **[Figjam link for brainstorming](#):** Affinity diagrams mapping out stress triggers in standard productivity apps and brainstorming the "cosmic" visual identity (stars, dark backgrounds, organic outlines).
+* **[Draw.io link for technical flowchart diagram](#):** Flowchart illustrating the state logic for tasks (Active, Parked, Frozen, Done, Deleted) ensuring task IDs remain stable across transitions, and detailing the Voice-to-AI processing pipeline.
+* **[Figma storyboard](#):** User flow sequences documenting the crucial "Open App -> Capacity Check -> Empty Task Space -> Long Press Voice Input" journey.
 
 ### 2.3 Mentor Consultation
 
 | Date | Mentor | Feedback Received | What Was Changed |
 | :--- | :--- | :--- | :--- |
-| Sep 10, 2026 | Looi Wei En[cite: 3] | Advised streamlining gesture responsiveness in Figma prototypes and validating interaction boundaries early. | Refined prototype rules to ensure the horizontal slider and card swipe areas do not conflict, keeping gesture triggers strictly separated[cite: 2]. |
+| May 2026 | UI/UX Mentor | The initial interface feels too much like a standard dashboard with menus. | We removed the traditional bottom navigation, hamburger menu, and floating "+" button, replacing the interface entirely with an empty cosmic space and a long-press voice input mechanism. |
 
 ---
 
 ## 3. Design & Prototype
 
-**UI Prototype:** [Public Link]  
-*Check that it opens in an incognito window. Features the Daily Capacity Check-in, Single-Card Deck, 4-way swipe mechanics, voice long-press simulation, and Gentle Mode states[cite: 2].*
+**UI Prototype:** [Figma prototype](#)
+*Brief Explanation:* A clickable high-fidelity prototype showcasing the dark midnight/charcoal environment, the daily capacity slider (0-100%), and physical card gestures. 
 
-> *Embedded key prototype views demonstrating the transition from the Daily Capacity Check slider (Screen 1) to the Single-Card Task Deck (Screen 2) and gesture responses[cite: 2].*
+**Key Screens & Interactions:**
+1. **Capacity Check Screen:** The app asks, "Good morning. How much can you handle today?" with a visual face/emoji scale and slider. It avoids scoring and instead offers gentle interpretations like "Let's take it easy."
+2. **Empty Task Environment:** A quiet cosmic space waiting for intentional input. There are no placeholder cards or fake tasks; the user must long-press to initiate the "Listening..." state.
+3. **Task Chunking (UP Gesture):** Dragging a task card UP physically cracks/splits the large task into two smaller, more manageable task cards (e.g., splitting "Finish Multimedia Assignment" into two smaller steps).
+4. **Recovery Mode:** Triggered when capacity is low. It initiates a 2:00 minute countdown with a breathing star visualization to encourage the user to step away and recharge before returning to the task environment.
 
 ---
 
 ## 4. What Makes It Different
 
-*   **Active Bandwidth Adaptation:** Unlike traditional task apps that display an unyielding backlog, Orbit actively shrinks task demands based on user-reported capacity ("When you have less capacity, we ask less of you")[cite: 2].
-*   **Gesture-First, Zero-Button Interface:** Eliminates traditional UI clutter (no bottom navigation, hamburger menus, floating action buttons, or checkboxes) in favor of physical card manipulation[cite: 2].
-*   **Guilt-Free Protection:** Completely avoids streaks, score trackers, and shame language, introducing "Quiet Protection" and "Soft Landing" screens that never punish users for having low capacity or stepping away[cite: 2].
+* **No Guilt Mechanics:** Orbit strictly avoids streaks, productivity scores, red overdue warnings, and endless task counters. 
+* **Dynamic, Emotion-Responsive Environment:** The visual atmosphere (brightness, animation speed, energy ripple size) changes dynamically based on the user's declared capacity, shifting into "Gentle Mode" when capacity is low.
+* **Physical Interaction:** Tasks are manipulated via direction-based physical gestures (Chunk, Freeze, Delete) instead of traditional checkboxes, giving a tactile sense of clearing one's plate.
+* **One Task at a Time:** There is no conventional list or dashboard. Only one active task card is presented in the center at a time, preserving focus and preventing visual overwhelm.
 
 ---
 
 ## 5. Technical Architecture & Feasibility
 
-**Tech Stack:**
-*   **Frontend:** Cross-platform mobile framework (React Native / Flutter) optimized for smooth gesture physics and transition animations. Chosen for rapid prototyping and fluid gesture responsiveness.
-*   **Backend:** Spring Boot / Firebase backend for secure handling of capacity logs and user data state.
-*   **Database:** Firebase Firestore (NoSQL schema structured via dbdiagram.io for capacity logging and triage/task events)[cite: 3].
-*   **APIs & Services:** OpenAI API for processing voice input transcripts into structured task cards, alongside calendar API integration for contextual task scheduling[cite: 1, 3].
+**Tech Stack**
+* **Frontend:** React Native / Expo. Chosen to handle the complex, fluid swipe gestures (Right, Left, Up, Down) and custom animations (cracking cards, energy ripples) across mobile platforms smoothly.
+* **Backend:** Spring Boot (Java). Chosen based on our team's existing familiarity with integrating AI models (like Z.ai GLM-5.1) and handling external APIs.
+* **Database / Architecture:** PostgreSQL via Supabase. Chosen for easy setup. 
+* **Links:** 
+  * **[Github link](#):** Repository for version control and collaborative code integration.
+  * **[dbdiagram link for data api flow diagram](#):** Explains the schema ensuring unique task IDs map accurately to their respective states (active, frozen, background) independently of UI array indices.
+  * **[Google docs link for timeline, reports, summary and calendar](#):** Project management hub tracking development milestones and sprint summaries.
+  * **[Google docs link for all the meeting notes](#):** Log of team standups, decision-making rationales, and action items.
 
-**System Architecture Diagram:** [Insert Draw.io Link] and [Insert dbdiagram.io Link]  
-*Complete backend system flow mapping from mobile UI actions to AI processing, database logging, and relational/NoSQL entity relationship mapping[cite: 3].*
-
-**Build Plan & Scope:**
-*   Focus strictly on implementing the core Orbit interaction loop consistently (Capacity Check $\rightarrow$ Single Card $\rightarrow$ Gesture Actions $\rightarrow$ Adaptive States) without scope creep[cite: 2].
-*   Ensure prototype triggers are accurately bound to prevent accidental gesture overlapping, such as separating the horizontal slider from the vertical upward transition[cite: 2]. Narrow scope reads as realistic and feasible rather than a lack of ambition.
+**Build Plan & Scope**
+For the submission phase, we will focus strictly on building the core loop MVP: The Capacity Check screen, the empty task space, the voice input processing (utilizing hardcoded data that simulates AI natural language parsing for a multi-task brain dump), one-by-one task display, and the four main directional gestures. Passive load detection and complex background syncing will be scoped out of the initial build to ensure the prototype is realistic, polished, and feasible to deliver on time.
