@@ -70,9 +70,9 @@ Orbit is a stress-aware task management experience designed around a quiet, cosm
 ## 5. Technical Architecture & Feasibility
 
 **Tech Stack**
-* **Frontend:** React Native / Expo. Chosen to handle the complex, fluid swipe gestures (Right, Left, Up, Down) and custom animations (cracking cards, energy ripples) across mobile platforms smoothly.
-* **Backend:** Spring Boot (Java). Chosen based on our team's existing familiarity with integrating AI models (like Z.ai GLM-5.1) and handling external APIs.
-* **Database / Architecture:** PostgreSQL via Supabase. Chosen for easy setup. 
+* **Frontend:** React Native / Expo. Chosen to support Orbit’s fluid directional gestures (Right = Done, Left = Freeze, Up = Chunk, Down = Delete), interactive task cards, Task Space navigation, and custom animations such as card cracking, orbital movement, meteor transitions, and energy ripples across mobile platforms.
+* **Backend:** Spring Boot (Java). Chosen based on our team's existing familiarity with Java, AI model integration (such as Z.ai GLM-5.1), and external APIs. The backend architecture provides a foundation for future AI-powered task parsing and adaptive workload features.
+* **Database / Architecture:** PostgreSQL via Supabase. Chosen for its simple setup and suitability for storing persistent task data and states. Each task is assigned a unique ID so that tasks can safely move between Active, Parked, Frozen, Chunked, Completed, and Deleted states without losing their identity. 
 * **Links:** 
   * **[Github link](#):** Repository for version control and collaborative code integration.
   * **[dbdiagram link for data api flow diagram](#):** Explains the schema ensuring unique task IDs map accurately to their respective states (active, frozen, background) independently of UI array indices.
@@ -80,4 +80,4 @@ Orbit is a stress-aware task management experience designed around a quiet, cosm
   * **[Google docs link for all the meeting notes](#):** Log of team standups, decision-making rationales, and action items.
 
 **Build Plan & Scope**
-For the submission phase, we will focus strictly on building the core loop MVP: The Capacity Check screen, the empty task space, the voice input processing (utilizing hardcoded data that simulates AI natural language parsing for a multi-task brain dump), one-by-one task display, and the four main directional gestures. Passive load detection and complex background syncing will be scoped out of the initial build to ensure the prototype is realistic, polished, and feasible to deliver on time.
+FFor the submission phase, we will focus on delivering the core Orbit interaction loop: the Capacity Check screen, adaptive Gentle Mode, the empty task environment, voice-based brain dump processing (using hardcoded data to simulate AI natural-language task parsing), one-by-one task display, the four main directional gestures, Task Space for viewing and switching between tasks, manual task input, Recovery Mode, and the completed-task state. AI processing, passive load detection, calendar/email integrations, and complex background synchronization will be scoped out of the initial build. This keeps the prototype technically realistic while allowing us to focus on the distinctive interaction between user capacity, task states, and gesture-based workload management.
