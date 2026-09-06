@@ -3,11 +3,9 @@
 **Team:** Yow Jia Yen, Goh Ching Yee, Victoria Kew Kim Tian, Yong Zi Yan
 **Problem Statement:** Lifestyle Track: Beating the Burnout - Stress & Workload Manager
 
-**Video Presentation:** [YouTube Link](#) 
-*Brief Explanation:* A video presentation demonstrating the core cosmic task environment, voice input interaction, and the fluid task gestures (Done, Freeze, Chunk, Delete).
+**Video Presentation:** 
 
-**Presentation Slides:** [Canva Link](#)
-*Brief Explanation:* Our pitch deck outlining the problem of productivity burnout, introducing our philosophy "When you have less capacity, we ask less of you," and visualizing the adaptive UI.
+**Presentation Slides:** 
 
 ---
 
@@ -33,9 +31,9 @@ Orbit is a stress-aware task management experience designed around a quiet, cosm
 
 ### 2.2 Ideation Boards
 
-* **[Figjam link for brainstorming](#):** Affinity diagrams mapping out stress triggers in standard productivity apps and brainstorming the "cosmic" visual identity (stars, dark backgrounds, organic outlines).
-* **[Draw.io link for technical flowchart diagram](#):** Flowchart illustrating the state logic for tasks (Active, Parked, Frozen, Done, Deleted) ensuring task IDs remain stable across transitions, and detailing the Voice-to-AI processing pipeline.
-* **[Figma storyboard](#):** User flow sequences documenting the crucial "Open App -> Capacity Check -> Empty Task Space -> Long Press Voice Input" journey.
+* **Figjam link for brainstorming:** 
+* **Draw.io link for technical flowchart diagram:** 
+* **Figma storyboard:** 
 
 ### 2.3 Mentor Consultation
 
@@ -47,8 +45,7 @@ Orbit is a stress-aware task management experience designed around a quiet, cosm
 
 ## 3. Design & Prototype
 
-**UI Prototype:** [Figma prototype](#)
-*Brief Explanation:* A clickable high-fidelity prototype showcasing the dark midnight/charcoal environment, the daily capacity slider (0-100%), and physical card gestures. 
+**UI Prototype:** 
 
 **Key Screens & Interactions:**
 1. **Capacity Check Screen:** The app asks, "Good morning. How much can you handle today?" with a visual face/emoji scale and slider. It avoids scoring and instead offers gentle interpretations like "Let's take it easy."
@@ -74,10 +71,10 @@ Orbit is a stress-aware task management experience designed around a quiet, cosm
 * **Backend:** Spring Boot (Java). Chosen based on our team's existing familiarity with Java, AI model integration (such as Z.ai GLM-5.1), and external APIs. The backend architecture provides a foundation for future AI-powered task parsing and adaptive workload features.
 * **Database / Architecture:** PostgreSQL via Supabase. Chosen for its simple setup and suitability for storing persistent task data and states. Each task is assigned a unique ID so that tasks can safely move between Active, Parked, Frozen, Chunked, Completed, and Deleted states without losing their identity. 
 * **Links:** 
-  * **[Github link](#):** Repository for version control and collaborative code integration.
-  * **[dbdiagram link for data api flow diagram](#):** Explains the schema ensuring unique task IDs map accurately to their respective states (active, frozen, background) independently of UI array indices.
-  * **[Google docs link for timeline, reports, summary and calendar](#):** Project management hub tracking development milestones and sprint summaries.
-  * **[Google docs link for all the meeting notes](#):** Log of team standups, decision-making rationales, and action items.
+  * **Github link:** 
+  * **dbdiagram link for data api flow diagram:** 
+  * **Google docs link for timeline, reports, summary and calendar:** 
+  * **Google docs link for all the meeting notes:** 
 
 **Build Plan & Scope**
 FFor the submission phase, we will focus on delivering the core Orbit interaction loop: the Capacity Check screen, adaptive Gentle Mode, the empty task environment, voice-based brain dump processing (using hardcoded data to simulate AI natural-language task parsing), one-by-one task display, the four main directional gestures, Task Space for viewing and switching between tasks, manual task input, Recovery Mode, and the completed-task state. AI processing, passive load detection, calendar/email integrations, and complex background synchronization will be scoped out of the initial build. This keeps the prototype technically realistic while allowing us to focus on the distinctive interaction between user capacity, task states, and gesture-based workload management.
