@@ -1,1232 +1,693 @@
-# Orbit by Banana404
+ORBIT by Banana 404
 
-**Team:** Yow Jia Yen, Goh Ching Yee, Victoria Kew Kim Tian, Yong Zi Yan
+Team: Yow Jia Yen, Victoria Kew Kim Tian, Goh Ching Yee, Yong Zi Yan
+Problem Statement: Stress & Workload Manager
+Video Presentation: [Insert final unlisted YouTube link]
+Presentation Slides: [Insert public Canva link]
 
-**Problem Statement:** Stress & Workload Manager
+1. Project Overview
 
-**Video Presentation:** [INSERT UNLISTED YOUTUBE LINK]
+The Problem
 
-**Presentation Slides:** [INSERT PUBLIC CANVA LINK]
+University students often have to manage assignments, deadlines, emails, classes, errands, social commitments, and personal responsibilities at the same time.
+However, a student’s capacity is not constant.
+The same workload can feel manageable on one day and overwhelming on another. Traditional productivity applications usually continue presenting the same lists, reminders, priorities, and deadlines regardless of how much the user can realistically handle.
+This can create another layer of cognitive overhead for students who are already overwhelmed.
+Orbit focuses on a more specific group: students who struggle with complex workloads, maintaining focus, and organising multiple responsibilities at once.
+This is especially relevant to users who experience difficulties commonly associated with inattention, such as forgetfulness, losing track of tasks, difficulty organising responsibilities, and trouble maintaining focus. Orbit does not diagnose or treat ADHD or any other medical condition; the app focuses on workload and interaction design.
 
----
+Existing Approach
 
-# 1. Project Overview
+Conventional task-management applications are useful for recording and organising tasks, but their core model is generally:
+User → adapts to workload
+Orbit explores the opposite approach:
+Workload → adapts to user
+The key insight is that the problem is not always having too much work. Sometimes the workload simply does not match the user’s current capacity.
 
-## The Problem
+Our Solution
 
-Traditional productivity applications are designed around the assumption that users should continuously adapt themselves to their workload.
+Orbit is a stress and workload management mobile application built around one central principle:
+When you have less capacity, we ask less of you.
+Instead of immediately presenting a large task list, Orbit first asks the user how much they can handle today. The user’s reported capacity influences the workload experience and visual environment.
+Users can then perform a natural-language brain dump, allowing multiple responsibilities to be converted into individual tasks. Instead of managing a long list, users interact with one active card at a time through simple physical gestures.
+Orbit is designed to make workload feel possible, rather than simply pushing users to become more productive.
 
-Task lists, deadlines, priorities, overdue indicators, reminders, streaks, and productivity dashboards can be useful when users have enough energy and attention to manage them. However, a person's capacity is not constant. On stressful or exhausting days, seeing the same workload can make tasks feel even more overwhelming.
+Core Features
 
-For students and young adults balancing academic responsibilities, administrative tasks, personal commitments, social activities, and recovery, the problem is not always a lack of productivity.
+Capacity Check
 
-Sometimes, **the workload simply does not match the user's current capacity.**
+Capacity-Adaptive Environment
 
-Existing productivity applications such as conventional task managers and productivity dashboards primarily focus on what needs to be completed. They generally present tasks as lists and encourage users to complete as many tasks as possible.
+Gentle Mode
 
-Orbit takes a different approach:
+Voice Brain Dump
 
-> **Instead of asking the user to adapt to the workload, Orbit adapts the workload experience to the user's capacity.**
+AI Task Interpretation
 
-### Target Users
+One Active Card
 
-Orbit is designed primarily for:
+Gesture-Based Task Management
 
-* University students
-* Young adults
-* People balancing multiple responsibilities
-* Users who experience fluctuating daily capacity
-* Users who feel overwhelmed by conventional task-management interfaces
-* Users who want productivity support without guilt or pressure
+Task Chunking
 
-### Our Core Insight
+Freeze
 
-People do not have the same capacity every day.
+Park
 
-Therefore, a task-management system should not treat every day as if the user's available energy and attention are constant.
+Delete
 
-Orbit explores whether adapting the workload experience to a user's **self-reported capacity** can make the workload feel more manageable and give users greater control over what they need to handle.
+Recovery Mode
 
-> **Design boundary:** Orbit's capacity and Energy Ripple system are symbolic interaction mechanisms. They are not scientific measurements, medical assessments, or mental-health diagnoses.
+No-Guilt Productivity
 
-### Our Solution
+Capacity Model
 
-**Orbit** is a stress-aware task-management mobile application built around the principle:
+Capacity
 
-> **"When you have less capacity, we ask less of you."**
+Orbit Response
 
-Instead of immediately presenting users with a large task list, Orbit first asks how much they can handle today. The user's capacity influences the visual environment and workload experience. Users can then perform a natural-language brain dump, which is interpreted into individual tasks that appear one at a time. Tasks can be completed, frozen, chunked, parked, or deleted through physical directional interactions.
+0–20%
 
-The product aims to make workload feel **possible**, rather than simply pushing users to become more productive.
+Recovery
 
-### Feature Set
+20–40%
 
-#### Capacity Check
+Gentle Mode
 
-Users begin with:
+>40%
 
-> **"Good morning. How much can you handle today?"**
+Normal Mode
 
-They select their current capacity using a gentle face/emoji scale and slider.
+Capacity is not a difficulty setting. A low-capacity user is never locked out from completing difficult work. Instead, Orbit changes how the workload is presented.
 
-#### Capacity-Adaptive Environment
+2. Ideation & Process
 
-The cosmic environment responds visually to the user's reported capacity through elements such as:
+2.1 Ideas We Considered
 
-* Star brightness
-* Energy ripple
-* Visual activity
-* Overall environmental atmosphere
+The team initially explored the problem from the perspective of productivity and stress management. Through ideation and mentor feedback, we gradually narrowed the concept towards capacity-aware workload management.
 
-#### Gentle Mode
+Idea
 
-When capacity is low, Orbit adapts the workload experience towards:
+Why it was kept / dropped
 
-* Smaller actions
-* Simpler tasks
-* Lower-friction interactions
-* Smaller chunks
-* Optional recovery suggestions
+Adaptive Workload Manager
 
-Gentle Mode does not prevent the user from using the application.
+Chosen. Became the main concept because it directly addresses the difference between workload and changing user capacity.
 
-#### Empty Task Environment
+Capacity Check
 
-After the capacity check, Orbit opens into an empty cosmic task environment.
+Chosen. Gives Orbit an input that conventional task managers generally do not consider: how much the user can handle today.
 
-The user does not immediately see a conventional task list or automatically populated task card.
+One Active Card
 
-Instead, the environment waits for the user to tell Orbit what they need to handle.
+Chosen. Reduces the cognitive load of seeing many unfinished tasks at once.
 
-#### Voice-Based Brain Dump
+Voice Brain Dump
 
-Users can long-press the task environment to provide a natural-language brain dump.
+Chosen. Allows users to describe multiple responsibilities naturally instead of manually organising them first.
 
-For example:
+Task Chunking
 
-> "I need to finish my multimedia assignment, reply to the team email, review the design feedback, and prepare my weekly notes."
+Chosen. Allows overwhelming tasks to be transformed into smaller, more approachable actions.
 
-Orbit interprets this as separate tasks.
+Gesture-Based Interaction
 
-#### AI Task Interpretation
+Chosen. Makes task management physical and simple instead of relying on menus and multiple navigation screens.
 
-The intended interaction is:
+Recovery Mode
 
-**Listening → Processing → Got It → Task Creation**
+Chosen. Recognises that sometimes the appropriate response to low capacity is recovery rather than more productivity.
 
-One voice interaction can produce multiple independent task objects.
+Cosmic Interface
 
-For the prototype, deterministic/hardcoded data may be used to simulate the AI interpretation. The interaction must still demonstrate the correct story: the user provides input first, Orbit processes it, and the resulting tasks appear afterwards.
+Chosen. Provides a visual language for capacity and task states while making Orbit distinct from conventional productivity dashboards.
 
-#### One Task at a Time
+Traditional Dashboard
 
-Orbit avoids presenting users with a conventional infinite task list.
+Dropped. The team felt that a dashboard containing many lists and metrics could create additional cognitive overhead.
 
-After tasks are created, they appear one at a time so the user can focus on the immediate task.
+Bottom Navigation
 
-#### Directional Task Gestures
+Dropped. The team interpreted the mentor’s emphasis on simplicity and reduced cognitive overhead as a reason to remove unnecessary navigation from the core interaction.
 
-| Direction | Action | Meaning              |
-| --------- | ------ | -------------------- |
-| **Right** | Done   | "I'm finished."      |
-| **Left**  | Freeze | "Not now."           |
-| **Up**    | Chunk  | "Make this smaller." |
-| **Down**  | Delete | "Remove this."       |
+Hamburger Menu
 
-#### Park / Background
+Dropped. Removed unnecessary navigation complexity.
 
-Park is a separate depth-based interaction rather than a fifth swipe direction.
+Floating “+” Button
 
-A parked task moves farther into the background and becomes smaller, dimmer, softer, and slightly blurred.
+Dropped. The team chose long-press interaction instead to make task creation part of Orbit’s physical interaction model.
 
-It represents:
+Priority System
 
-> **"I don't know what to do with this right now."**
+Deprioritised. Prioritisation tells users what is important, but does not necessarily account for their current capacity.
 
-#### Freeze
+Streaks / Gamification
 
-Frozen tasks move into the outer orbit and visually become colder.
+Dropped. These mechanics conflicted with Orbit’s no-guilt approach.
 
-Freeze represents:
+Heavy Notifications
 
-> **"Not now."**
+Dropped. Additional reminders could become another source of cognitive overload.
 
-The user can later bring the same task back into the active space.
+Calendar / LMS / Email Integration
 
-#### Chunk
+Future implementation. Potentially useful for understanding a user’s wider workload, but outside the current prototype scope.
 
-A large task can be broken into smaller actions.
+How Our Idea Evolved
 
-For example:
+The team’s direction can be summarised as:
+We started with Productivity. We ended with Capacity.
+The key decision was to stop asking:
+“How do we help students complete more?”
+and instead ask:
+“How can we make the workload feel manageable?”
+This shift led to the current combination of capacity awareness, adaptive workload, one active card, physical interaction, and recovery.
 
-**Finish Multimedia Assignment**
+2.2 Ideation Boards
 
-can become:
+FigJam Brainstorming Board
 
-* Open the assignment brief
-* Identify the 3 sections I need to complete
+[Insert FigJam Brainstorming Board Link]
+The brainstorming board documents the team’s exploration of:
 
-The smaller tasks remain connected to the original task through their task identity.
+Student stress and workload
 
-#### Recovery Mode
+Existing productivity approaches
 
-When capacity is low, users can optionally enter a 2-minute recovery experience.
+Target users
 
-The prototype includes:
+Adaptive workload concepts
 
-* 2:00 countdown
-* Calm breathing visualization
-* Cosmic charging/recovery animation
+Voice input
 
-Recovery is an invitation rather than an obligation.
+Task chunking
 
-#### No-Guilt Design
+Gesture interaction
 
-Orbit deliberately avoids:
+Cosmic UI
 
-* Streaks
-* Productivity scores
-* Shame messages
-* "You failed" messages
-* Red overdue warnings
-* Aggressive notifications
-* Endless task counters
-* Pressure to complete everything
+Features that were retained
 
-The intended message is:
+Features that were dropped
 
-> **"You are allowed to have limited capacity."**
+Storyboard
 
----
+[Insert Figma Storyboard Link]
+The storyboard illustrates the user’s experience and helped the team visualise how Orbit should move from the initial capacity check into the workload environment.
 
-# 2. Ideation & Process
+UI Design
 
-## 2.1 Ideas We Considered
+[Insert Figma UI Design Link]
+The UI exploration helped the team move away from a conventional productivity dashboard towards a more minimal and spatial interaction model.
 
-The team explored multiple approaches to the problem of stress and workload management.
+System & User Flow Diagrams
 
-| Idea                                              | Why it was kept / dropped                                                                                                                                                                                                                                    |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **A. Adaptive Load Manager + Cosmic UI — Chosen** | Directly addresses the team's core insight that workload should adapt to the user's current capacity. The cosmic environment also provides a distinctive visual language for communicating capacity without relying on conventional productivity dashboards. |
-| **B. Voice-Based Multi-Task Input — Chosen**      | Reduces the friction of manually entering multiple tasks. One natural brain dump can become multiple structured tasks, creating a clear end-to-end interaction for the prototype.                                                                            |
-| **C. Gamified Productivity Tracker — Dropped**    | Streaks and productivity-focused mechanics conflicted with Orbit's no-guilt philosophy. A low-capacity day should not make the user feel that they have failed.                                                                                              |
+[Insert Orbit Diagram Link]
+The overview and in depth diagrams help illustrate how Orbit moves from the user’s initial capacity check through task creation, task interaction, and recovery.
 
-### Decision Principle
+2.3 Mentor Consultation
 
-The team evaluated ideas around one central question:
+Date：10 September 2026 - 8:25pm
+Mentor：Looi Wei En
 
-> **"How can we make the workload feel possible?"**
+UI/UX Mentor Consultation
 
-This led us towards adaptive workload management, natural task creation, and low-pressure task interactions rather than conventional productivity scoring.
+The team consulted a UI/UX mentor to review the concept, user experience, and presentation of Orbit. The discussion focused mainly on clarifying the problem, narrowing the target users, simplifying the experience, and making Orbit's concept and interaction model more distinctive.
+The mentor feedback led to several important changes:
 
----
+Feedback
 
-## 2.2 Ideation Boards
+What Was Changed
 
-### FigJam Brainstorming Board
+Define who Orbit is designed for instead of trying to address every type of student stress or workload.
 
-**Link:** [INSERT FIGJAM BRAINSTORMING LINK]
+Narrowed the target audience to students who experience difficulty managing complex workloads and too many things at once.
 
-The board documents the team's brainstorming process, including exploration of:
+The team was encouraged to look at current productivity applications and consider how their features and interfaces can become complicated for users who already have many things to manage
 
-* Burnout and workload problems
-* Existing productivity approaches
-* Adaptive workload concepts
-* Voice input
-* Gesture-based interactions
-* Cosmic interface concepts
-* Feature ideas
-* Ideas that were eventually dropped
+Simplified the interface by removing unnecessary productivity-app conventions and focusing only on the core interactions needed to manage workload.
 
-### Affinity Diagram / User Flow
+The presentation should make it immediately understandable what Orbit does, rather than spending too much time explaining individual UI elements.
 
-**Link:** [INSERT MIRO / FIGJAM LINK IF APPLICABLE]
+Redesigned the main experience around a clear, empty task environment where the purpose and next action are easier to understand.
 
-[INSERT IMAGE OR EMBEDDED BOARD HERE IF AVAILABLE]
+Briefly show the different ideas explored and explain which ideas were kept and which were removed as the concept became more focused.
 
-### Supporting Ideation Documentation
+Removed features that added unnecessary management, such as dashboards, excessive navigation, and conventional task-management elements, and kept the core ideas of capacity, adaptive workload, attention control, and recovery.
 
-**Google Docs:** [INSERT GOOGLE DOCS DOCUMENTATION LINK]
+Need to be clearly communicate how Orbit differs from conventional productivity applications, particularly in the way it represents and handles workload.
 
----
+Introduced a spatial interaction model where tasks are represented through the environment: active tasks stay at the center, parked tasks move into the background, and frozen tasks move to the outer orbit
 
-## 2.3 Mentor Consultation
+How the Feedback Influenced Orbit
 
-### UI/UX Mentor — May 2026
+The consultation helped the team refine Orbit from a broader productivity concept into a more focused experience centered around simplicity, capacity, and reduced cognitive overhead.
+Rather than presenting students with another system that requires them to organize and manage everything, the team focused on creating an interaction where users can tell Orbit what they need to handle and move through the workload one step at a time.
+This also influenced the team's decision to prioritize the Figma storyboard and core interaction flow in the presentation, while keeping detailed technical diagrams and supporting information in GitHub.
+The overall direction became:
+Less to manage. Less to organize. One step at a time.
 
-| Date         | Mentor Feedback Received                                                           | What Was Changed                                                                                                          |
-| ------------ | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| **May 2026** | The initial interface looked too similar to a conventional productivity dashboard. | The team moved away from standard dashboard conventions and redesigned the experience around an empty cosmic environment. |
-| **May 2026** | Bottom navigation was unnecessary for the core interaction.                        | Removed bottom navigation.                                                                                                |
-| **May 2026** | The hamburger menu added unnecessary navigation complexity.                        | Removed hamburger navigation.                                                                                             |
-| **May 2026** | A floating "+" button made the experience feel like a conventional task manager.   | Removed the floating "+" button and made long press the task-creation interaction.                                        |
-| **May 2026** | The interface needed to better communicate Orbit's unique concept.                 | Introduced the cosmic environment and capacity-responsive visual language.                                                |
+10 September 2026 Mentor / Team Discussion
 
-The feedback shifted the product away from:
+The discussion further focused on whether Orbit’s main idea was clear enough, how to avoid making it feel like another common productivity application, and how to communicate the concept effectively within a short presentation.
+Key directions from the discussion were:
 
-> **"Here is your task list. Now be productive."**
+Clearly explain the app concept and target problem.
 
-towards:
+Show the Figma storyboard/UI rather than spending too much time explaining every design detail.
 
-> **"Tell me what you need to handle. I'll help make the load manageable."**
+Make the target group more specific instead of trying to solve every form of stress.
 
-### Additional Mentor Consultation
+Research existing applications and explain where conventional approaches become too complicated.
 
-**Documentation / Evidence:** [INSERT GOOGLE DOCS OR OTHER LINK IF APPLICABLE]
+Highlight simplicity and reduced cognitive overhead.
 
----
+Show all major ideas considered and explain what the team decided to let go.
 
-# 3. Design & Prototype
+Focus the presentation on how Orbit works and why its interaction is different.
 
-## UI Prototype
+Explain the main flow in approximately two minutes.
 
-**Figma Prototype:** [INSERT PUBLIC FIGMA PROTOTYPE LINK]
+Include the detailed diagrams in GitHub, while only briefly showing the simplified version during the presentation.
 
-> **Submission check:** Ensure the prototype link can be opened in an incognito window without requiring the reviewer to log in.
+Consider how the workload should be visually represented rather than relying on a conventional task list.
 
-The prototype focuses on demonstrating Orbit's core vertical slice rather than attempting to implement every possible future feature.
+The discussion reinforced the team’s decision to focus the product around simplicity, capacity, and one-step-at-a-time interaction.
 
----
+3. Design & Prototype
 
-## Key Screens
+UI Prototype
 
-### 1. Capacity Check
+Published Prototype:
+[Insert published Figma prototype link]
+The prototype demonstrates Orbit’s main product loop rather than attempting to implement every future feature.
 
-**Screenshot:** [INSERT IMAGE]
+Key Screens
 
-The user begins by answering:
+1. Capacity Check
 
-> **"Good morning. How much can you handle today?"**
+The experience begins with:
+“Good morning. How much can you handle today?”
+The user selects their current capacity.
+The capacity determines how Orbit presents the workload.
 
-The user selects their capacity using the face/emoji scale and slider.
+2. Empty Task Environment
 
----
-
-### 2. Empty Task Environment
-
-**Screenshot:** [INSERT IMAGE]
-
-After setting capacity, the user enters the cosmic task environment.
-
+After setting capacity, the user enters Orbit’s main environment.
 The center is intentionally empty.
-
 There is:
 
-* No conventional task list
-* No automatically populated task
-* No placeholder card
-* No large Continue button
-* No floating "+" button
+No conventional task list
 
-The environment waits for intentional user input.
+No automatically displayed task
 
----
+No large Continue button
 
-### 3. Listening
+No floating “+” button
 
-**Screenshot:** [INSERT IMAGE]
+No dashboard
 
-The user long-presses the environment to begin voice input.
+Instead, Orbit waits for the user to tell it what they need to handle.
+This is an important part of the concept because the user should feel that they are initiating the workload rather than being immediately presented with another list to manage.
 
-Orbit displays:
+3. Voice Brain Dump
 
-> **"Listening..."**
+The user long-presses the environment.
+Orbit enters:
+“Listening…”
+The user can naturally say multiple responsibilities in one interaction.
+For example:
+“I need to finish my multimedia assignment, reply to the team email, review the design feedback, and prepare my weekly notes.”
+One voice interaction can therefore become multiple structured tasks.
 
-The environment responds with subtle cosmic feedback such as ripples, glow, and movement.
+4. AI Processing
 
----
+After the user releases the long press, Orbit shows:
+Listening → Processing → Got It
+For the current prototype, the AI behaviour can be simulated where required.
+This allows the demonstration to show the intended transformation without depending entirely on live AI services.
 
-### 4. Processing / Got It
+5. One Active Card
 
-**Screenshot:** [INSERT IMAGE]
+After processing, Orbit presents one active task card at a time.
+The active card becomes the user’s immediate focus.
+Other tasks remain in the surrounding environment instead of being displayed as a long conventional list.
+One card. One decision. One step at a time.
 
-After the user releases the long press, Orbit transitions through:
+6. Gesture Interaction
 
-**Listening → Processing → Got It**
+The user manages the active card through four directional gestures, while Park provides a separate spatial way to move a task into the background.
 
-Possible processing text:
+Interaction
 
-> **"Understanding your tasks..."**
+Action
 
-The task card should not appear immediately. The staged interaction makes the AI interpretation experience clear during the demonstration.
+Meaning
 
----
+→
 
-### 5. Active Task
+Done
 
-**Screenshot:** [INSERT IMAGE]
+“I’m finished.”
 
-After "Got It", the first interpreted task enters the center of the environment.
+←
 
-Only one task is active at a time.
+Freeze
 
-The task card contains useful information such as:
+“Not now.”
 
-* Task title
-* Estimated duration
-* Category
-* Optional subtle deadline information
+↑
 
-The card avoids unnecessary dashboard-style controls.
+Chunk
 
----
-
-### 6. Chunk
-
-**Screenshot:** [INSERT IMAGE]
-
-The user drags a large task upward.
-
-The card visually cracks/splits into smaller actions.
-
-Example:
-
-**Finish Multimedia Assignment**
+“Make this smaller.”
 
 ↓
 
-**Open the assignment brief**
+Delete
 
-**Identify the 3 sections I need to complete**
+“I don’t need it.”
 
-The resulting tasks have their own unique IDs and retain their relationship to the original task.
+Long press
 
----
+Move to background / Park
 
-### 7. Freeze / Park
+”I don’t know what to do with this yet”
 
-**Screenshot:** [INSERT IMAGE]
+The interaction makes task management more physical and reduces the need for multiple menus.
 
-**Freeze — LEFT**
+7. Chunking
 
+A large task can be made smaller.
+For example:
+Finish Multimedia Assignment
+becomes:
+
+Open the assignment brief
+
+Identify the 3 sections to complete
+
+The goal is to change:
+“This is too much.”
+into:
+“I can start with this.”
+
+8. Freeze & Park
+
+Orbit gives postponement two different meanings.
+Freeze
+“Not now.”
 The task moves into the colder outer orbit.
+Park
+“I don’t know what to do with this right now.”
+The task moves into the background and becomes smaller, dimmer, and less visually demanding.
+This distinction allows task state to be communicated spatially instead of relying only on labels.
 
-Meaning:
+9. Recovery
 
-> **"Not now."**
+When the user’s capacity is very low, Orbit enter a recovery mode:
+“2 MIN RESET”
+The recovery experience does not delete or reset tasks.
+Instead, it gives the user a short pause before returning to the workload.
+Recovery is an invitation, not a punishment or failure.
 
-**Park — Background**
+4. What Makes It Different
 
-The task moves backwards into the inner background and becomes:
+Orbit is not simply a conventional task manager with a cosmic theme.
+Its main difference is that capacity becomes part of the workload-management experience.
 
-* Smaller
-* Dimmer
-* Softer
-* Slightly blurred
+1. Capacity Comes First
 
-Meaning:
+Traditional productivity asks:
+“What do I need to finish?”
+Orbit asks:
+“What can I realistically handle right now?”
+The answer influences the workload experience.
 
-> **"I don't know what to do with this right now."**
+2. One Active Card
 
-These two states are intentionally different.
+Instead of presenting every responsibility at once:
+One card → one decision → one step
+This reduces the immediate amount of information competing for the user’s attention.
 
----
+3. The Workload Can Change Size
 
-### 8. Recovery Mode
+Orbit does not only organise tasks.
+It can change how a task is approached.
+A large task can be transformed into smaller actions through Chunk.
 
-**Screenshot:** [INSERT IMAGE]
+4. Physical Interaction
 
-When appropriate, the user can enter:
+Done, Freeze, Chunk, and Delete are represented through directional gestures.
+This reduces administrative interaction and makes the task itself the main interface.
 
-> **"2 MIN RESET"**
+5. Voice Before Organisation
 
-The recovery environment shows:
+Users can first dump their thoughts naturally and let Orbit structure them afterwards.
+This creates:
+Unstructured thoughts → structured tasks → manageable actions
 
-**2:00 → 0:00**
+6. The Environment Communicates State
 
-with a calm cosmic breathing/charging visualization.
-
-After the countdown reaches zero, the application returns to the task environment rather than resetting the user's tasks.
-
----
-
-## Complete Golden Demo Path
-
-The main demonstration focuses on one complete end-to-end transformation.
-
-### Step 1 — Capacity
-
-Open Orbit.
-
-Show:
-
-> **"Good morning. How much can you handle today?"**
-
-Set capacity around 40%.
-
-The environment becomes softer.
-
-### Step 2 — Empty Environment
-
-Swipe upward into the task environment.
-
-The center is empty.
-
-### Step 3 — Voice Brain Dump
-
-Long press and show:
-
-> **"Listening..."**
-
-Say:
-
-> "I need to finish my multimedia assignment, reply to the team email, review the design feedback, and prepare my weekly notes."
-
-### Step 4 — AI Interpretation
-
-Release.
-
-Show:
-
-> **"Understanding your tasks..."**
-
-Then:
-
-> **"Got it."**
-
-### Step 5 — Tasks Appear One at a Time
-
-The first task appears:
-
-**Multimedia Assignment**
-
-↓
-
-User completes it.
-
-Then:
-
-**Reply to Team Email**
-
-↓
-
-User completes it.
-
-Then:
-
-**Review Design Feedback**
-
-↓
-
-User completes it.
-
-Then:
-
-**Prepare Weekly Notes**
-
-↓
-
-User completes it.
-
-This demonstrates:
-
-> **One natural voice input → AI interpretation → multiple separate task objects → one active task at a time.**
-
-### Step 6 — Chunk
-
-Demonstrate:
-
-**Finish Multimedia Assignment → UP**
-
-The task splits into two smaller actions.
-
-### Step 7 — Freeze
-
-Demonstrate:
-
-**Reply to Team Email → LEFT**
-
-The task moves into the colder outer orbit.
-
-Explain:
-
-> **"Freeze means not now."**
-
-### Step 8 — Park
-
-Demonstrate:
-
-**Review Design Feedback → Background**
-
-The task becomes smaller, dimmer, softer, and farther away.
-
-Explain:
-
-> **"Park means I don't know what to do with this right now."**
-
-### Step 9 — Delete
-
-Demonstrate:
-
-**Prepare Weekly Notes → DOWN**
-
-The task falls into the cosmic void.
-
-### Step 10 — Recovery
-
-When capacity is low, show:
-
-> **"You've done enough for now."**
-
-> **"Your capacity is low."**
-
-> **"2 MIN RESET"**
-
-Enter Recovery Mode.
-
----
-
-# 4. What Makes It Different
-
-Orbit is not simply a conventional task manager with a different visual theme.
-
-Its main difference is that **user capacity becomes part of the workload-management experience.**
-
-## 1. Capacity Changes the Workload Experience
-
-Traditional task managers generally present the workload regardless of how much capacity the user has that day.
-
-Orbit begins with:
-
-> **"How much can you handle today?"**
-
-The response influences the experience and environment.
-
----
-
-## 2. The Cosmic UI Is Functional
-
-The cosmic environment is part of the interaction model rather than purely decorative.
-
+The cosmic environment is functional rather than purely decorative.
 Elements such as:
 
-* Energy Ripple
-* Star brightness
-* Orbit depth
-* Visual movement
+Energy ripple
 
-help communicate the user's current capacity and task state.
+Star brightness
 
-The Energy Ripple is explicitly symbolic rather than scientific.
+Visual movement
 
----
+Spatial distance
 
-## 3. One Active Task at a Time
+Orbit depth
 
-Orbit avoids showing a conventional task list.
+can communicate changes in capacity and task state.
 
-Instead, the user's attention is directed towards one active task.
+7. No-Guilt Productivity
 
-This makes the immediate next action more obvious.
+Orbit intentionally avoids:
 
----
+Streaks
 
-## 4. Four-Direction Task Interaction
+Productivity scores
 
-Orbit turns task management into a physical interaction system:
+Shame messages
 
-| Direction | Action | User Meaning         |
-| --------- | ------ | -------------------- |
-| Right     | Done   | "I'm finished."      |
-| Left      | Freeze | "Not now."           |
-| Up        | Chunk  | "Make this smaller." |
-| Down      | Delete | "Remove this."       |
+Punitive overdue warnings
 
-The interaction is designed to make task management feel more physical and less administrative.
+Aggressive notifications
 
----
+Endless task counters
 
-## 5. Voice Brain Dump
+The user is allowed to have limited capacity.
 
-Instead of manually creating tasks one at a time, the user can describe multiple responsibilities naturally.
+5. Technical Architecture & Feasibility
 
-One voice interaction can become multiple independent tasks.
+Tech Stack
 
-This creates a clear transformation:
+Frontend — React Native / Expo
 
-> **Unstructured thoughts → structured tasks → manageable actions**
+Used for:
 
----
+Mobile interface
 
-## 6. Chunking Instead of Simply Prioritizing
+Cosmic environment
 
-Conventional task managers often ask users to prioritize or schedule large tasks.
+Task cards
 
-Orbit provides a different interaction:
+Gesture interactions
 
-> **If the task feels too big, make it smaller.**
+Animations
 
-Chunking converts one large task into smaller actions.
+Capacity experience
 
----
+Backend — Spring Boot / Java
 
-## 7. Freeze and Park Have Different Meanings
+Responsible for:
 
-Orbit distinguishes between:
+Task logic
 
-**Freeze**
+Capacity logic
 
-> "Not now."
+Task state transitions
 
-and
+Recovery logic
 
-**Park**
+API endpoints
 
-> "I don't know what to do with this right now."
+Database — PostgreSQL / Supabase
 
-Freeze uses the outer orbit and colder visual treatment.
+Planned for storing:
 
-Park uses depth, distance, size, softness, and blur.
+Users
 
-This allows task state to communicate different forms of postponement without relying on conventional status labels.
+Tasks
 
----
+Task states
 
-## 8. No-Guilt Productivity
+Capacity information
 
-Orbit intentionally avoids mechanics that turn productivity into a measure of personal success or failure.
+Recovery sessions
 
-There are no:
+AI / Speech Services
 
-* Streaks
-* Productivity scores
-* Shame messages
-* Red overdue warnings
-* Endless task counters
-* Punitive visual effects
+Planned processing flow:
+Voice Input → Speech Recognition → AI Task Interpretation → Structured Tasks
+The prototype can use simulated/deterministic AI responses where necessary.
 
-The system is designed around acceptance of fluctuating capacity.
+Architecture
 
----
+React Native / Expo
+↓
+Spring Boot / Java
+↓
+PostgreSQL / Supabase
+↓
+AI / Speech Services
+The architecture separates the mobile interface, application logic, persistent data, and external AI services.
+The technical direction is intended to support the transition from the current prototype into a real product.
 
-## 9. Persistent Task Identity
+Build Plan & Scope
 
-Every task has a unique persistent identity independent of:
-
-* Card position
-* Animation order
-* Array index
-* Visual position
-
-For example:
-
-```text
-voice-session-1
-    │
-    ├── multimedia-assignment
-    ├── reply-team-email
-    ├── review-design-feedback
-    └── prepare-weekly-notes
-```
+The team will focus on a realistic vertical slice instead of attempting to implement every possible future feature.
 
-A task must remain the same task when moving between states.
+Core Product Loop
 
-For example:
-
-```text
-ACTIVE → BACKGROUND → ACTIVE
-```
-
-must return the exact same task.
-
-Similarly:
-
-```text
-ACTIVE → FROZEN → ACTIVE
-```
-
-must preserve the same task identity.
-
----
-
-## Comparison With Conventional Productivity Tools
-
-| Dimension             | Conventional Productivity Tools            | Orbit                             |
-| --------------------- | ------------------------------------------ | --------------------------------- |
-| Starting point        | Task list / dashboard                      | Capacity Check                    |
-| Workload presentation | Generally fixed                            | Capacity-responsive               |
-| Task creation         | Manual entry                               | Voice brain dump + manual input   |
-| Focus                 | Multiple visible tasks                     | One active task                   |
-| Large tasks           | User manually breaks them down             | Chunk interaction                 |
-| Postponement          | Status / due date                          | Freeze / Park                     |
-| Completion            | Checkbox / button                          | Directional gesture               |
-| Visual feedback       | Dashboard / list                           | Cosmic environment                |
-| Motivation            | Streaks / productivity metrics may be used | No-guilt design                   |
-| Recovery              | Usually separate                           | Integrated optional Recovery Mode |
-
----
-
-# 5. Technical Architecture & Feasibility
-
-## Tech Stack
-
-| Layer                        | Technology                                  | Why It Fits                                                                                                                                        |
-| ---------------------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Frontend**                 | React Native / Expo                         | Suitable for building a mobile prototype and implementing gesture-driven interactions.                                                             |
-| **Backend**                  | Spring Boot / Java                          | Provides a structured backend/API layer for task management and application logic.                                                                 |
-| **Database**                 | PostgreSQL / Supabase                       | Provides persistent storage for task objects and their states.                                                                                     |
-| **AI / Task Interpretation** | [INSERT ACTUAL AI SERVICE / IMPLEMENTATION] | Used to interpret natural-language brain dumps into structured tasks. If the prototype uses hardcoded deterministic data, state that clearly here. |
-| **Hosting / Deployment**     | [INSERT ACTUAL HOSTING]                     | [INSERT WHY THIS SERVICE WAS CHOSEN / CONSTRAINTS]                                                                                                 |
-
-> **Important:** Only list technologies and services that the team actually uses or plans to use. Replace all placeholders before submission.
-
----
-
-## System Architecture Diagram
-
-**Architecture Diagram:**
-[INSERT FIGMA / LUCIDCHART SYSTEM ARCHITECTURE LINK]
-
-### High-Level Architecture
-
-```text
-┌──────────────────────────────┐
-│       Orbit Mobile App      │
-│    React Native / Expo      │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│       Spring Boot API       │
-│            Java             │
-└──────────────┬───────────────┘
-               │
-       ┌───────┴────────┐
-       │                │
-       ▼                ▼
-┌───────────────┐  ┌─────────────────────┐
-│ Task & State  │  │ Task Interpretation │
-│    Logic      │  │ [ACTUAL METHOD]     │
-└───────┬───────┘  └─────────────────────┘
-        │
-        ▼
-┌──────────────────────────────┐
-│     PostgreSQL / Supabase   │
-└──────────────────────────────┘
-```
-
-[REPLACE OR SUPPLEMENT THIS WITH THE FINAL ARCHITECTURE DIAGRAM]
-
----
-
-## Task State Lifecycle
-
-**Task State Lifecycle Diagram:**
-[INSERT LUCIDCHART / DRAW.IO LINK]
-
-Orbit separates task identity from task state.
-
-### Core States
-
-* **Active**
-* **Parked / Background**
-* **Frozen**
-* **Chunked**
-* **Completed**
-* **Deleted**
-
-Conceptual flow:
-
-```text
-                         ┌──────────────┐
-                         │    ACTIVE    │
-                         └──────┬───────┘
-                                │
-             ┌──────────────────┼──────────────────┐
-             │                  │                  │
-             ▼                  ▼                  ▼
-        COMPLETED            FROZEN              CHUNKED
-             │                  │                  │
-             │                  ▼                  ▼
-             │                ACTIVE        SMALLER TASKS
-             │
-             ▼
-          END
-
-ACTIVE ───────────────► PARKED / BACKGROUND
-                              │
-                              ▼
-                            ACTIVE
-
-ACTIVE ───────────────► DELETED
-```
-
-The same task ID must be preserved when a task moves between states.
-
----
-
-## Database Schema
-
-**ERD:**
-[INSERT DBdiagram.io LINK]
-
-### Conceptual Task Object
-
-```text
-Task
-├── id
-├── title
-├── duration
-├── deadline
-├── category
-├── state
-├── parentTaskId
-├── created_at
-└── updated_at
-```
-
-The exact database fields should reflect the team's actual implementation.
-
-### Task Identity
-
-Task identity must not depend on:
-
-* Card position
-* Array index
-* Animation order
-* Visual position
-
-This prevents state transitions from accidentally displaying the wrong task.
-
----
-
-## Task Categories
-
-Orbit uses five task categories:
-
-* **Academic**
-* **Chores**
-* **Financial**
-* **Social**
-* **Errands**
-
-The category describes:
-
-> **What area of life is this task from?**
-
-Task state describes:
-
-> **Where is this task in my attention space?**
-
-These are separate concepts.
-
-Categories can be represented subtly through the cosmic environment rather than conventional colourful category labels.
-
----
-
-## Voice-to-Task Architecture
-
-The intended interaction is:
-
-```text
-User Brain Dump
-       │
-       ▼
-   LISTENING
-       │
-       ▼
-   PROCESSING
-       │
-       ▼
-     GOT IT
-       │
-       ▼
-Structured Task Objects
-       │
-       ▼
-One Active Task
-       │
-       ▼
-Gesture / Action
-       │
-       ▼
-Updated Task State
-```
-
-### Prototype AI Approach
-
-The prototype may use deterministic/hardcoded data behind the scenes.
-
-This is acceptable for demonstrating the concept as long as the interaction correctly communicates:
-
-> **"I told the app what I needed to do, and the AI understood and created my tasks."**
-
-The prototype should not imply that a production-grade speech-recognition or AI system has been implemented if it has not.
-
----
-
-## Technical Feasibility
-
-Orbit is intentionally scoped around a narrow vertical slice:
-
-> **Input → Interpretation → Task Creation → Task State → Interaction → Updated State**
-
-The core system does not require every future productivity integration to demonstrate its central value.
-
-### Core Vertical Slice
-
-```text
 Capacity Check
-      ↓
-Adaptive Environment
-      ↓
+↓
+Capacity-Adaptive Environment
+↓
 Voice Brain Dump
-      ↓
+↓
 Task Interpretation
-      ↓
-Task Creation
-      ↓
-One Active Task
-      ↓
-Gesture
-      ↓
+↓
+One Active Card
+↓
+Gesture Interaction
+↓
 Updated Task State
-```
 
-This allows the team to focus implementation effort on the most visible and important part of the product.
+Prototype Scope
 
----
+The building phase will focus on:
 
-## Reliability & Demo Fallback
+Capacity Check
 
-The prototype should remain demonstrable even if an external AI/API dependency is unavailable.
+Capacity-adaptive environment
 
-Potential fallback mechanisms include:
+Gentle Mode
 
-* Deterministic task data
-* Prepared demo inputs
-* Seeded task objects
-* Local/cached prototype outputs
-* Recorded backup demonstration
-* Screenshots of completed flows
+Empty task environment
 
-The core product story should remain functional without depending entirely on live external services.
+Voice brain dump interaction
 
----
+Simulated/deterministic AI task interpretation
 
-## Validation & Testing
+One active task at a time
 
-### Capacity
+Four directional gestures
 
-* [ ] Capacity Check works.
-* [ ] Different capacity selections produce the intended visual response.
-* [ ] Low capacity does not prevent the user from continuing.
-* [ ] Gentle Mode adapts the experience without locking the user out.
+Task chunking
 
-### Voice Input
+Freeze
 
-* [ ] Long press activates Listening.
-* [ ] Normal tap does not accidentally create a task.
-* [ ] Short drag does not accidentally trigger voice input.
-* [ ] Listening state is clearly visible.
-* [ ] Processing state is clearly visible.
-* [ ] "Got It" state appears before task creation.
-* [ ] Multiple tasks can be produced from one voice interaction.
+Park
 
-### Task Identity
+Delete
 
-* [ ] Every task has a unique ID.
-* [ ] Task identity does not depend on array index.
-* [ ] Task identity does not depend on visual position.
-* [ ] Frozen tasks return as the same task.
-* [ ] Parked tasks return as the same task.
-* [ ] Chunked tasks retain their parent relationship.
+Completed state
 
-### Gestures
+Recovery Mode
 
-* [ ] Right → Done
-* [ ] Left → Freeze
-* [ ] Up → Chunk
-* [ ] Down → Delete
-* [ ] Failed/short swipes return the card to the center.
-* [ ] Gestures do not trigger unintended actions.
+Persistent task identity and state transitions
 
-### Recovery
+Current Limitations
 
-* [ ] Recovery Mode can be entered.
-* [ ] 2:00 countdown works.
-* [ ] Recovery visualization works.
-* [ ] Task gestures are disabled during Recovery Mode.
-* [ ] The app returns to the task environment after 0:00.
-* [ ] Tasks are not reset after recovery.
+Simulated AI — the prototype may not use a fully production-ready AI service.
 
----
+Self-Reported Capacity — capacity is currently provided by the user rather than automatically measured.
 
-## Ethics, Safety & User Boundaries
+No Personalisation — Orbit does not yet learn an individual’s workload patterns.
 
-Orbit is a **stress and workload management application**, not a medical or mental-health diagnostic system.
+Early Validation — further testing is required with real users.
 
-The project therefore follows these boundaries:
+Orbit is a workload-management concept, not a medical or mental-health diagnostic system. Capacity is self-reported and the visual capacity system is symbolic rather than scientific.
 
-* Capacity is self-reported.
-* Energy Ripple is symbolic rather than scientific.
-* Orbit does not diagnose users.
-* Orbit does not claim to treat mental-health conditions.
-* Low capacity does not lock the user out of the application.
-* Recovery Mode is optional.
-* The product avoids shame-based productivity mechanics.
-* External API keys and credentials must not be exposed in the public repository.
-* Any AI/API dependency should have a reasonable demonstration fallback.
+Future Implementation
 
----
+Future development can move Orbit from a manually configured system towards a more adaptive platform.
 
-## Build Plan & Scope
+User Input → Behaviour → Learning → Adaptation
 
-The team prioritizes a realistic vertical slice rather than attempting to implement every possible future feature.
+Potential future implementations include:
 
-### Priority 1 — Core Product Loop
+Real speech recognition
 
-**Capacity Check**
+Advanced AI task decomposition
 
-↓
+Personalised workload adaptation
 
-**Capacity-Adaptive Environment**
+Workload prediction
 
-↓
+Calendar integration
 
-**Voice Brain Dump**
+LMS integration
 
-↓
+Email integration
 
-**Task Interpretation**
+Cloud task persistence
 
-↓
+Background synchronisation
 
-**One Active Task**
+User accounts
 
-↓
+Additional accessibility features
 
-**Gesture-Based Task Management**
+The long-term direction is:
+Today, you tell Orbit your capacity.
+Tomorrow, Orbit learns it.
+These future features would only be introduced after validating the core Orbit experience.
 
-↓
+Project Resources
 
-**Updated Task State**
+Ideation
 
-### Priority 2 — Supporting Features
+FigJam Brainstorming Board:
+[Insert FigJam link]
+Figma Storyboard:
+[Insert Figma storyboard link]
 
-* Gentle Mode
-* Empty Task Space
-* Manual Task Input
-* Park / Background
-* Freeze
-* Chunk
-* Recovery Mode
-* Completed state
-* Persistent task identity
+Design & Prototype
 
-### Prototype Scope
+Figma UI Design:
+[Insert Figma UI link]
+Published Prototype:
+[Insert published Figma prototype link]
 
-The prototype will focus on:
+Presentation
 
-* Capacity Check
-* Gentle Mode
-* Empty Task Environment
-* Voice-based brain dump interaction
-* Deterministic/hardcoded task interpretation where required
-* One-by-one task display
-* Four directional gestures
-* Task Space
-* Manual input
-* Recovery Mode
-* Completed task state
-* Persistent task identity and state transitions
+Video Presentation:
+[Insert final unlisted YouTube link]
+Presentation Slides:
+[Insert Canva link]
 
-### Out of Scope for the Prototype
+Documentation
 
-The following are future possibilities rather than requirements for the current prototype:
+Project Documentation:
+[Insert Google Docs link]
+System / User Flow Diagrams:
+[Insert Figma diagrams link]
 
-* Full production speech recognition
-* Advanced autonomous AI planning
-* Calendar synchronization
-* Email synchronization
-* Background synchronization
-* Large-scale notification infrastructure
-* Medical/mental-health assessment
-* Scientific stress measurement
+Source Code
 
-Keeping these features outside the initial scope allows the team to concentrate on delivering a reliable and demonstrable core experience.
+GitHub Repository:
+[Insert GitHub repository link]
 
----
+ORBIT
 
-## Future Development
+Capacity Management for Modern Student Life
 
-Once the core product loop is validated, Orbit could be extended with:
-
-* Real speech recognition
-* More advanced AI task decomposition
-* Calendar integration
-* Email integration
-* Background synchronization
-* Persistent user accounts
-* More sophisticated workload planning
-* Additional accessibility features
-* Cloud-based task persistence
-* More personalized workload adaptation
-
-The fundamental product boundary remains:
-
-> **Help users make their workload feel manageable according to their available capacity.**
-
----
-
-# Project Resources
-
-The following resources provide supporting evidence and materials for the project.
-
-### Design & Ideation
-
-**FigJam Brainstorming:**
-[INSERT FIGJAM LINK]
-
-**Figma Prototype:**
-[INSERT FIGMA LINK]
-
-### Presentation
-
-**YouTube Demo / Presentation:**
-[INSERT YOUTUBE LINK]
-
-**Canva Pitch Deck:**
-[INSERT CANVA LINK]
-
-### Technical Diagrams
-
-**Task State Lifecycle:**
-[INSERT LUCIDCHART / DRAW.IO LINK]
-
-**Database ERD:**
-[INSERT DBdiagram.io LINK]
-
-**System Architecture:**
-[INSERT FIGMA / LUCIDCHART LINK]
-
-### Documentation
-
-**Google Docs — Project Documentation:**
-[INSERT GOOGLE DOCS LINK]
-
-**Additional Documentation:**
-[INSERT LINK IF APPLICABLE]
-
-### Repository
-
-**GitHub Repository:**
-[INSERT PUBLIC GITHUB REPOSITORY LINK]
-
----
-
-# Final Product Philosophy
-
-Orbit is built around one simple principle:
-
-> ## **When you have less capacity, we ask less of you.**
-
-The goal is not to make users complete more tasks at any cost.
-
-The goal is to help users understand:
-
-**What can I handle right now?**
-
-and then make that workload feel possible.
-
-> **Tell me what you need to handle. I'll help make the load manageable.**
+Workload adapts to you. Not the other way around.
+When you have less capacity, we ask less of you.
