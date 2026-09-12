@@ -1,8 +1,11 @@
 # ORBIT by Banana 404
 
 **Team:** Yow Jia Yen, Victoria Kew Kim Tian, Goh Ching Yee, Yong Zi Yan
+
 **Problem Statement:** Stress & Workload Manager
+
 **Video Presentation:** [Insert final unlisted YouTube link]
+
 **Presentation Slides:** [https://canva.link/enf2le1go29wgwy]
 
 ---
