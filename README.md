@@ -3,7 +3,7 @@
 **Team:** Yow Jia Yen, Victoria Kew Kim Tian, Goh Ching Yee, Yong Zi Yan
 **Problem Statement:** Stress & Workload Manager
 **Video Presentation:** [Insert final unlisted YouTube link]
-**Presentation Slides:** [Insert public Canva link]
+**Presentation Slides:** [https://canva.link/enf2le1go29wgwy]
 
 ---
 
@@ -105,7 +105,7 @@ This shift led to the current combination of capacity awareness, adaptive worklo
 
 ### FigJam Brainstorming Board
 
-[Insert FigJam Brainstorming Board Link]
+[https://www.figma.com/board/vDf1A00jMEhYqKtZavuX1c/codenection-brainstorm?node-id=0-1&t=rWoGmA5DX83WOHtI-1]
 The brainstorming board documents the team’s exploration of:
 
 - Student stress and workload
@@ -121,17 +121,17 @@ The brainstorming board documents the team’s exploration of:
 
 ### Storyboard
 
-[Insert Figma Storyboard Link]
+[https://www.figma.com/design/61EfIEJ6nShgEc1j1zV4WA/Codenection-storyboard?node-id=0-1&t=FrP1eDeyL6V1t4nA-1]
 The storyboard illustrates the user’s experience and helped the team visualise how Orbit should move from the initial capacity check into the workload environment.
 
 ### UI Design
 
-[Insert Figma UI Design Link]
+[https://www.figma.com/design/yOeB922FN2nb2FAtnBImby/Orbit_screen?node-id=0-1&t=c2Z2PpbIGLAV4QvQ-1]
 The UI exploration helped the team move away from a conventional productivity dashboard towards a more minimal and spatial interaction model.
 
 ### System & User Flow Diagrams
 
-[Insert Orbit Diagram Link]
+[https://www.figma.com/board/7YV4pXdgEgP2ZgZtqoAhzN/Banana404_Orbit?node-id=0-1&t=Uk0AtMdMMSrH2l2k-1]
 The overview and in depth diagrams help illustrate how Orbit moves from the user’s initial capacity check through task creation, task interaction, and recovery.
 
 ---
@@ -139,6 +139,7 @@ The overview and in depth diagrams help illustrate how Orbit moves from the user
 ## 2.3 Mentor Consultation
 
 Date：10 September 2026 - 8:25pm 
+
 Mentor：Looi Wei En
 
 ## UI/UX Mentor Consultation
@@ -187,7 +188,7 @@ The discussion reinforced the team’s decision to focus the product around **si
 ## UI Prototype
 
 **Published Prototype:**
- [Insert published Figma prototype link]
+ [https://flower-bubble-63373325.figma.site]
 The prototype demonstrates Orbit’s main product loop rather than attempting to implement every future feature.
 
 ---
@@ -509,41 +510,36 @@ These future features would only be introduced after validating the core Orbit e
 ### Ideation
 
 **FigJam Brainstorming Board:**
- [Insert FigJam link]
+ [https://www.figma.com/board/vDf1A00jMEhYqKtZavuX1c/codenection-brainstorm?node-id=0-1&t=rWoGmA5DX83WOHtI-1]
 **Figma Storyboard:**
- [Insert Figma storyboard link]
+ [https://www.figma.com/design/61EfIEJ6nShgEc1j1zV4WA/Codenection-storyboard?node-id=0-1&t=FrP1eDeyL6V1t4nA-1]
 
 ### Design & Prototype
 
 **Figma UI Design:**
- [Insert Figma UI link]
+ [https://www.figma.com/design/yOeB922FN2nb2FAtnBImby/Orbit_screen?node-id=0-1&t=c2Z2PpbIGLAV4QvQ-1]
 **Published Prototype:**
- [Insert published Figma prototype link]
+ [https://flower-bubble-63373325.figma.site]
 
 ### Presentation
 
 **Video Presentation:**
  [Insert final unlisted YouTube link]
 **Presentation Slides:**
- [Insert Canva link]
+ [https://canva.link/enf2le1go29wgwy]
 
 ### Documentation
 
 **Project Documentation:**
- [Insert Google Docs link]
+ [https://docs.google.com/document/d/1u9V5Zvxz8GA2J6c7BtfkTSnaekVswgJUoZL1v1UbksQ/edit?usp=sharing]
 **System / User Flow Diagrams:**
- [Insert Figma diagrams link]
-
-### Source Code
-
-**GitHub Repository:**
- [Insert GitHub repository link]
+ [https://www.figma.com/board/7YV4pXdgEgP2ZgZtqoAhzN/Banana404_Orbit?node-id=0-1&t=Uk0AtMdMMSrH2l2k-1]
 
 ---
 
 # ORBIT
 
-### Capacity Management for Modern Student Life
+### Lifestyle Track: Beating the Burnout (Stress and Workload Manager
 
 **Workload adapts to you. Not the other way around.**
 **When you have less capacity, we ask less of you.**
