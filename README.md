@@ -109,6 +109,7 @@ This shift led to the current combination of capacity awareness, adaptive worklo
 ### FigJam Brainstorming Board
 
 [https://www.figma.com/board/vDf1A00jMEhYqKtZavuX1c/codenection-brainstorm?node-id=0-1&t=rWoGmA5DX83WOHtI-1]
+
 The brainstorming board documents the team’s exploration of:
 
 - Student stress and workload
@@ -125,16 +126,19 @@ The brainstorming board documents the team’s exploration of:
 ### Storyboard
 
 [https://www.figma.com/design/61EfIEJ6nShgEc1j1zV4WA/Codenection-storyboard?node-id=0-1&t=FrP1eDeyL6V1t4nA-1]
+
 The storyboard illustrates the user’s experience and helped the team visualise how Orbit should move from the initial capacity check into the workload environment.
 
 ### UI Design
 
 [https://www.figma.com/design/yOeB922FN2nb2FAtnBImby/Orbit_screen?node-id=0-1&t=c2Z2PpbIGLAV4QvQ-1]
+
 The UI exploration helped the team move away from a conventional productivity dashboard towards a more minimal and spatial interaction model.
 
 ### System & User Flow Diagrams
 
 [https://www.figma.com/board/7YV4pXdgEgP2ZgZtqoAhzN/Banana404_Orbit?node-id=0-1&t=Uk0AtMdMMSrH2l2k-1]
+
 The overview and in depth diagrams help illustrate how Orbit moves from the user’s initial capacity check through task creation, task interaction, and recovery.
 
 ---
@@ -191,7 +195,9 @@ The discussion reinforced the team’s decision to focus the product around **si
 ## UI Prototype
 
 **Published Prototype:**
+
  [https://flower-bubble-63373325.figma.site]
+ 
 The prototype demonstrates Orbit’s main product loop rather than attempting to implement every future feature.
 
 ---
@@ -513,29 +519,44 @@ These future features would only be introduced after validating the core Orbit e
 ### Ideation
 
 **FigJam Brainstorming Board:**
+
  [https://www.figma.com/board/vDf1A00jMEhYqKtZavuX1c/codenection-brainstorm?node-id=0-1&t=rWoGmA5DX83WOHtI-1]
+ 
 **Figma Storyboard:**
+
  [https://www.figma.com/design/61EfIEJ6nShgEc1j1zV4WA/Codenection-storyboard?node-id=0-1&t=FrP1eDeyL6V1t4nA-1]
+
 
 ### Design & Prototype
 
 **Figma UI Design:**
+
  [https://www.figma.com/design/yOeB922FN2nb2FAtnBImby/Orbit_screen?node-id=0-1&t=c2Z2PpbIGLAV4QvQ-1]
+ 
 **Published Prototype:**
+
  [https://flower-bubble-63373325.figma.site]
+
 
 ### Presentation
 
 **Video Presentation:**
+
  [Insert final unlisted YouTube link]
+ 
 **Presentation Slides:**
+
  [https://canva.link/enf2le1go29wgwy]
+
 
 ### Documentation
 
 **Project Documentation:**
+
  [https://docs.google.com/document/d/1u9V5Zvxz8GA2J6c7BtfkTSnaekVswgJUoZL1v1UbksQ/edit?usp=sharing]
+ 
 **System / User Flow Diagrams:**
+
  [https://www.figma.com/board/7YV4pXdgEgP2ZgZtqoAhzN/Banana404_Orbit?node-id=0-1&t=Uk0AtMdMMSrH2l2k-1]
 
 ---
