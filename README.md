@@ -1,4 +1,4 @@
-# ORBIT by Banana 404
+# ORBIT by Banana404
 
 **Team:** Yow Jia Yen, Victoria Kew Kim Tian, Goh Ching Yee, Yong Zi Yan
 
@@ -569,7 +569,7 @@ These future features would only be introduced after validating the core Orbit e
 
 # ORBIT
 
-### Lifestyle Track: Beating the Burnout (Stress and Workload Manager
+### Lifestyle Track: Beating the Burnout (Stress and Workload Manager)
 
 **Workload adapts to you. Not the other way around.**
 **When you have less capacity, we ask less of you.**
