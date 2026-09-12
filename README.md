@@ -138,7 +138,7 @@ The overview and in depth diagrams help illustrate how Orbit moves from the user
 
 ## 2.3 Mentor Consultation
 
-Date：10 September 2026 - 8:25pm
+Date：10 September 2026 - 8:25pm 
 Mentor：Looi Wei En
 
 ## UI/UX Mentor Consultation
